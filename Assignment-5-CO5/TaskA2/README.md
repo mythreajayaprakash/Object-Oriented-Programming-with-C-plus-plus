@@ -1,0 +1,1 @@
+Compile and run the prediction program. Predict before execution. Expected sequence follows virtual dispatch for total(), then derived and base destruction. Separately remove `virtual` from the base destructor in a disposable copy and run with AddressSanitizer; capture the compiler/runtime diagnostics on your own toolchain. Do not use the unsafe variant in the final submission.

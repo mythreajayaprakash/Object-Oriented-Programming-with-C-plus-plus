@@ -1,0 +1,1 @@
+Predict the exact output before running. The local Guard in f is destroyed during stack unwinding; then the Guard in main's try block is destroyed as control exits that scope; then the int handler prints the caught value. The `not printed` statement is skipped because throw transfers control to a matching handler.
