@@ -1,0 +1,2 @@
+# Q2 – Return by reference and its dangers
+Returning a reference to an element of a caller-owned array permits assignment through the function call. A const reference is read-only through that reference; a copy is independent. A reference to a local variable dangles after return and using it is undefined behaviour. Vector growth may reallocate storage, invalidating element references, pointers and iterators. Returning an index and accessing vector[index] after growth is safer. Finding the maximum is O(n) time and O(1) extra space for reference, pointer or index approaches.

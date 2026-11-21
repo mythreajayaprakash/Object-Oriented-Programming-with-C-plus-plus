@@ -1,0 +1,2 @@
+# Q5 – Static members and arrays of objects
+`issued` belongs to the class and is defined outside it. `count()` is static, has no `this` pointer and cannot access an individual ticket's non-static data. The array creates four tickets: three seats and one waiting-list entry. Objects created later in a function use the same static counter. The Token prediction program creates four objects, so IDs are 101, 103 and 104 for the printed objects, with issued count 4. A separate TicketOffice object can support multiple buses more flexibly than one class-wide counter.
